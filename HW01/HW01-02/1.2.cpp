@@ -27,12 +27,32 @@ void HW16() {
 	cout << "d(u, v) = " << sqrt(dot(w, w)) << endl;
 }
 
+void HW22() {
+	array<int, 4> u = { 1,2,3,4 };
+	array<int, 4> v = { -3, 1, 2, -2 };
+
+	double theta = cal_theta(u,v);
+
+	if (theta >= 90) cout << "둔각" << endl;
+	else if (theta == 90) cout << "직각" << endl;
+	else cout << "예각" << endl;
+}
+
 void HW28() {
 	array<int, 4> u = { 1,2,3,4 };
 	array<int, 4> v = { -3, 1, 2, -2 };
 
-	cout << "theta = " << acos(dot(u,v)/(sqrt(dot(u,u))* sqrt(dot(v, v))))*180/3.141592;
+	cout << "theta = " << cal_theta(u, v) << endl;
 }
+
+void HW32() {
+	array<int, 3> u = { 1, 1, 1 }; // 대각선
+	array<int, 3> v = { 1, 0, 0 }; // 인접한 모서리
+
+	cout << "theta = " << cal_theta(u, v) << endl;
+}
+
+
 
 int main()
 {
@@ -51,8 +71,14 @@ int main()
 	case 16:
 		HW16();
 		break;
+	case 22:
+		HW22();
+		break;
 	case 28:
 		HW28();
+		break;
+	case 32:
+		HW32();
 		break;
 	default:
 		break;
