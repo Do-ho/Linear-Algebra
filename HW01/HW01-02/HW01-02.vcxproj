@@ -123,7 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1.2.cpp" />
+    <ClCompile Include="KDH_1.2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linear-algebra-function.h" />

@@ -124,7 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1.1.cpp" />
+    <ClCompile Include="KDH_1.1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linear-algebra-function.h" />
