@@ -1,5 +1,7 @@
 #include "KDH_function.h"
 
+
+
 void HW04() {
 	//1 dollar = 100 cent
 	int coin_num = 20; //코인의 개수
@@ -25,9 +27,36 @@ void HW04() {
 	//b 문제 풀이
 }
 
-void HW16() {
+void HW35() {
+	array<array<int, 10>, 9> table;
+	
+	table[0] = { 1, 1, 0, 1, 0, 0, 0, 0, 0, 0 };
+	table[1] = { 1, 1, 1, 0, 1, 0, 0, 0, 0, 1 };
+	table[2] = { 0, 1, 1, 0, 0, 1, 0, 0, 0, 1 };
+	table[3] = { 1, 0, 0, 1, 1, 0, 1, 0, 0, 1 };
+	table[4] = { 1, 0, 1, 0, 1, 0, 1, 0, 1, 0 };
+	table[5] = { 0, 0, 1, 0, 1, 1, 0, 0, 1, 1 };
+	table[6] = { 0, 0, 0, 1, 0, 0, 1, 1, 0, 1 };
+	table[7] = { 0, 0, 0, 0, 1, 0, 1, 1, 1, 1 };
+	table[8] = { 0, 0, 0, 0, 0, 1, 0, 1, 1, 0 };
+
+	array<int, 9> s = { 0,1,1,1,0,1,1,1,0 };
+	
+	table = arrzero(0, table);
+
+	arrprint(table);
+	cout << endl;
+
+	table = arrzero(1, table);
+
+	
+	arrprint(table);
+
 
 }
+
+
+
 int main()
 {
 	int input;
@@ -39,8 +68,8 @@ int main()
 	case 4:
 		HW04();
 		break;
-	case 16:
-		HW16();
+	case 35:
+		HW35();
 		break;
 
 	default:
