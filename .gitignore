@@ -32,8 +32,9 @@
 *.app
 
 #plus
-.tlog
-.opendb
-.ipch
-.log
-.txt
+*.tlog
+*.opendb
+*.ipch
+*.log
+*.txt
+*.db
