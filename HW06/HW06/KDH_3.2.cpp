@@ -16,22 +16,24 @@ void HW04() {
 }
 
 void HW07() {
-	array<array<int, 3>, 2> A1;
-	array<array<int, 3>, 2> A2;
-	array<array<int, 3>, 2> A3;
-	array<array<int, 3>, 2> B;
+	int col = 4;
+	int row = 6;
+	array<array<float, 4>, 6> matrix;
+	array<array<float, 4>, 6> list;
+	list[0] = { 1, -1, 1, 3 };
+	list[1] = { 0, 2, 1, 1 };
+	list[2] = { -1, 0, 1, 1 };
+	list[3] = { 0, 0, 0, 0 };
+	list[4] = { 1, 1, 0, 1 };
+	list[5] = { 0, 0, 0, 0 };
 
-	A1[0] = { 1, 0, -1 };
-	A1[1] = { 0, 1, 0 };
-	A2[0] = { -1, 2, 0 };
-	A2[1] = { 0, 1, 0 };
-	A3[0] = { 1, 1, 1 };
-	A3[1] = { 0,0,0 };
-	B[0] = { 3, 1, 1 };
-	B[1] = { 0, 1, 0 };
+	matrix = list;
 
-	array<array<int, 4>, 6> C;
-	C[0] = ;
+	print_matrix(matrix, row, col);
+	cout << endl << "-->" << endl;
+	cout << endl;
+	rref07(&matrix, row, col);
+	print_matrix(matrix, row, col);
 }
 
 int main()
