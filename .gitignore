@@ -38,3 +38,7 @@
 *.log
 *.txt
 *.db
+*.suo
+*.ilk
+*.pdb
+*.idb

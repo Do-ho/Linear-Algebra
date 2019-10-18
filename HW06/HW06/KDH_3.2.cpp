@@ -36,6 +36,30 @@ void HW07() {
 	print_matrix(matrix, row, col);
 }
 
+void HW16() {
+	int col = 5;
+	int row = 9;
+	array<array<float, 5>, 9> matrix;
+	array<array<float, 5>, 9> list;
+	list[0] = { 1, 2, 1, -1, 0 };
+	list[1] = { -1, 1, 2, 1, 0 };
+	list[2] = { 0, 0, 0, 0, 0 };
+	list[3] = { 0, 0, 0, 0, 0 };
+	list[4] = { 2, 3, 1, -1, 0 };
+	list[5] = { 0, 0, 0, 0, 0 };
+	list[6] = { 0, 0, 0, 0, 0 };
+	list[7] = { 2, 4, 3, 0, 0 };
+	list[8] = { 6, 9, 5, -4, 0 };
+
+	matrix = list;
+
+	print_matrix(matrix, row, col);
+	cout << endl << "-->" << endl;
+	cout << endl;
+	rref16(&matrix, row, col);
+	print_matrix(matrix, row, col);
+}
+
 int main()
 {
 	int input;
@@ -50,6 +74,10 @@ int main()
 	
 	case 7:
 		HW07();
+		break;
+	
+	case 16:
+		HW16();
 		break;
 	}
 }
